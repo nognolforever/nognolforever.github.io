@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #73d52b;
+  background: #c42aff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2298,7 +2298,8 @@ embed {
    ======================================== */
 /* 背景图片 */
 html body {
-  background: url("/images/bg.jpg") no-repeat center center fixed !important;
+/* 使用相对路径，兼容本地和 GitHub Pages */
+  background: url("../images/bg.jpg") no-repeat center center fixed !important;
   background-size: cover !important;
   background-attachment: fixed !important;
 }
