@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5237ff;
+  background: #c4738e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2290,7 +2290,7 @@ embed {
   white-space: nowrap;
 }
 body {
-  background: url("../images/bg.jpg") no-repeat center center fixed;
+  background: url("#{url_for('/images/bg.jpg')}") no-repeat center center fixed;
   background-size: cover;
 }
 /* 全局文字颜色改为白色 */
