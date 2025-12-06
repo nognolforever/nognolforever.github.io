@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #773288;
+  background: #73d52b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2289,50 +2289,46 @@ embed {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-body {
-  background: url("#{url_for('/images/bg.jpg')}") no-repeat center center fixed;
-  background-size: cover;
+/* ========================================
+   Hexo + NexT 自定义样式
+   1. 背景图片
+   2. 全站文字白色
+   3. 链接白色
+   4. 移动端适配
+   ======================================== */
+/* 背景图片 */
+html body {
+  background: url("/images/bg.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
 }
-/* 全局文字颜色改为白色 */
-body {
-  color: #fff !important;
-}
-/* 改文章标题为白色 */
-.post-title {
-  color: #fff !important;
-}
-/* 改菜单栏文字为白色 */
-.navbar a {
-  color: #fff !important;
-}
-/* 改文章标签文字为白色 */
-.tag-link {
-  color: #fff !important;
-}
-/* 改文章摘要文字颜色 */
-.post-entry {
-  color: #fff !important;
-}
-/* 全局文字颜色改为白色 */
-* {
-  color: #fff !important;
-}
-/* 特殊元素再覆盖一次，保证生效 */
+/* 全站文字白色 */
 body,
-p,
-span,
+body * {
+  color: #fff !important;
+}
+/* 链接颜色 */
 a,
-li,
+a * {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+/* 导航栏、标题等元素 */
+.navbar,
+.site-title,
+.sidebar,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-.post-title,
-.post-entry,
-.tag-link,
-.navbar a,
-.sidebar a {
+h6 {
   color: #fff !important;
+}
+/* 移动端适配 - 防止背景裁剪 */
+@media (max-width: 991px) {
+  html body {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+  }
 }
