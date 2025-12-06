@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff7882;
+  background: #e3ccb8;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2288,4 +2288,51 @@ embed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+body {
+  background: url("/images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/* 全局文字颜色改为白色 */
+body {
+  color: #fff !important;
+}
+/* 改文章标题为白色 */
+.post-title {
+  color: #fff !important;
+}
+/* 改菜单栏文字为白色 */
+.navbar a {
+  color: #fff !important;
+}
+/* 改文章标签文字为白色 */
+.tag-link {
+  color: #fff !important;
+}
+/* 改文章摘要文字颜色 */
+.post-entry {
+  color: #fff !important;
+}
+/* 全局文字颜色改为白色 */
+* {
+  color: #fff !important;
+}
+/* 特殊元素再覆盖一次，保证生效 */
+body,
+p,
+span,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.post-entry,
+.tag-link,
+.navbar a,
+.sidebar a {
+  color: #fff !important;
 }
